@@ -1,3 +1,4 @@
+DROP DATABASE `jugos`;
 CREATE DATABASE `jugos` DEFAULT CHARACTER SET utf8;
 USE `jugos`;
 CREATE TABLE `tbclientes`(
@@ -24,3 +25,9 @@ CREATE TABLE `jugos`.`tbproductos` (
   `sabor` VARCHAR(50) NULL,
   `precio` FLOAT NULL
   );
+
+CREATE TABLE `jugos`.`tbvendedores`(
+MATRICULA VARCHAR(5),
+NOMBRE VARCHAR(100),
+PORCENTAJE_COMISION FLOAT
+);
