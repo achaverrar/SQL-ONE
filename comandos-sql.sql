@@ -15,3 +15,12 @@ LIMITE_CREDITO FLOAT,
 VOLUMEN_COMPRA FLOAT,
 PRIMERA_COMPRA BIT(1)
 );
+
+CREATE TABLE `jugos`.`tbproductos` (
+  `producto` VARCHAR(20) NULL,
+  `nombre` VARCHAR(150) NULL,
+  `envase` VARCHAR(50) NULL,
+  `volumen` VARCHAR(20) NULL,
+  `sabor` VARCHAR(50) NULL,
+  `precio` FLOAT NULL
+  );
