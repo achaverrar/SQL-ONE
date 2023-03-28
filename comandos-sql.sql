@@ -43,3 +43,9 @@ precio) VALUES ('1041119', 'Línea Citrus', 'Botella de Vidrio',
 '700 ml', 'Lima', 4.90);
 
 SELECT * FROM tbproductos;
+
+INSERT INTO tbvendedores(
+matricula, nombre, porcentaje_comision) 
+VALUES ('00233', 'Joan Geraldo de la Fonseca', '0.10');
+
+SELECT * FROM tbvendedores;
