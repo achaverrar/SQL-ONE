@@ -229,3 +229,34 @@ INSERT INTO tbProducto (PRODUCTO, NOMBRE, TAMANO, SABOR, ENVASE, PRECIO_LISTA) V
 INSERT INTO tbProducto (PRODUCTO, NOMBRE, TAMANO, SABOR, ENVASE, PRECIO_LISTA) VALUES ('1013793', 'Vida del Campo', '2 Litros', 'Cereza/Manzana', 'Botella PET', 24.01);
 INSERT INTO tbProducto (PRODUCTO, NOMBRE, TAMANO, SABOR, ENVASE, PRECIO_LISTA) VALUES ('290478', 'Vida del Campo', '350 ml', 'Sandía', 'Lata', 4.56);
 INSERT INTO tbProducto (PRODUCTO, NOMBRE, TAMANO, SABOR, ENVASE, PRECIO_LISTA) VALUES ('1002767', 'Vida del Campo', '700 ml', 'Cereza/Manzana', 'Botella de Vidrio', 8.41);
+
+##################################################
+#	 	 Module 5 - More Advanced Queries		 #
+##################################################
+
+## General queries
+# SELECT * FROM table_name; shows the values of all columns in a table
+# SELECT column1, column3 FROM table_name; we can show the values of fewer specific columns only, too
+# SELECT column3, column1 FROM table_name; displays the columns in any order of our preference
+# SELECT column AS field FROM table_name; we can use an alias for a columns to show its content under a different title
+# SELECT column FROM table_name LIMIT number; limits the amount of rows displayed
+# SELECT * FROM table_name WHERE column = value; only shows the rows whose value for 'column' matches the one provided
+# UPDATE table_name SET column = new_value WHERE column = old_value; replaces a value for another one in a column
+
+## Comparisons
+# SELECT * FROM table_name WHERE column > value; value can be either a number or a string
+# SELECT * FROM table_name WHERE column < value;
+# SELECT * FROM table_name WHERE column >= value;
+# SELECT * FROM table_name WHERE column <= value;
+# SELECT * FROM table_name WHERE column <> value; <> is the operator "for different from"
+# SELECT * FROM table_name WHERE column BETWEEN lower_bound AND upper_bound; upper and lower bounds are needed in equality comparisons between floats
+
+## Dates
+# SELECT * FROM table_name WHERE column = 'yyyy-mm-dd';
+# SELECT * FROM table_name WHERE column < 'yyyy-mm-dd'; the rest of general comparisons apply to full dates (strings), too
+# SELECT * FROM table_name WHERE YEAR(column) = yyyy; filters by year (a number)
+# SELECT * FROM table_name WHERE DAY(column) = dd; filters by day (a number)
+
+## Logical operators
+# SELECT * FROM table_name WHERE (query1) AND (query2);
+# SELECT * FROM table_name WHERE (query1) OR (query2);
