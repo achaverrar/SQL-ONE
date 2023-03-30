@@ -74,4 +74,20 @@ INSERT INTO tbvendedores(
 matricula, nombre, porcentaje_comision) 
 VALUES ('00233', 'Joan Geraldo de la Fonseca', '0.10');
 
+INSERT INTO tbvendedores(
+matricula, nombre, porcentaje_comision) 
+VALUES ('00235', 'Márcio Almeida Silva', '0.08');
+
+INSERT INTO tbvendedores(
+matricula, nombre, porcentaje_comision) 
+VALUES ('00236', 'Cláudia Morais', '0.08');
+
+SELECT * FROM tbvendedores;
+
+# Alterar tabla (solo funciona con el modo seguro desactivado)
+# Para desactivar el modo seguro: Edit -> Preferences... -> SQL Editor -> Safe Updates (Uncheck it)
+# UPDATE table_name SET column1 = new_value1, column2 = new_value2 WHERE column3 = value;
+UPDATE tbvendedores SET porcentaje_comision = 0.11 WHERE matricula = 00236;
+UPDATE tbvendedores SET nombre = 'Joan Geraldo de la Fonseca Junior' WHERE matricula = 00233;
+
 SELECT * FROM tbvendedores;
