@@ -99,3 +99,37 @@ SELECT * FROM tbvendedores;
 DELETE FROM tbvendedores WHERE matricula = '00233';
 
 SELECT * FROM tbvendedores;
+
+DROP TABLE tbvendedores;
+
+CREATE TABLE `jugos`.`tbvendedores`(
+MATRICULA VARCHAR(5),
+NOMBRE VARCHAR(100),
+PORCENTAJE_COMISION FLOAT,
+FECHA_ADMISION DATE,
+DE_VACACIONES BIT
+);
+
+# Modify tables:
+# ALTER TABLE table_name ADD PRIMARY KEY(column)
+# ALTER TABLE table_name ADD COLUMN(column type)
+
+ALTER TABLE tbvendedores ADD PRIMARY KEY(matricula);
+
+INSERT INTO tbvendedores(
+matricula, nombre, porcentaje_comision, fecha_admision, de_vacaciones) 
+VALUES ('00235', 'Márcio Almeida Silva', '0.08', '2014-08-15', 0);
+
+INSERT INTO tbvendedores(
+matricula, nombre, porcentaje_comision, fecha_admision, de_vacaciones) 
+VALUES ('00236', 'Cláudia Morais', '0.08', '2013-09-17', 1);
+
+INSERT INTO tbvendedores(
+matricula, nombre, porcentaje_comision, fecha_admision, de_vacaciones) 
+VALUES ('00237', 'Roberta Martins', '0.11', '2017-03-18', 1);
+
+INSERT INTO tbvendedores(
+matricula, nombre, porcentaje_comision, fecha_admision, de_vacaciones) 
+VALUES ('00238', 'Péricles Alves', '0.11', '2016-08-21', 0);
+
+SELECT * FROM tbvendedores;
