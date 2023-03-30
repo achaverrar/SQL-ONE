@@ -91,3 +91,11 @@ UPDATE tbvendedores SET porcentaje_comision = 0.11 WHERE matricula = 00236;
 UPDATE tbvendedores SET nombre = 'Joan Geraldo de la Fonseca Junior' WHERE matricula = 00233;
 
 SELECT * FROM tbvendedores;
+
+# Use DROP for databases, tables, columns...
+# Use DELETE for registries...
+# DELETE FROM table_name clears the whole table
+# DELETE FROM table_name WHERE column = value;
+DELETE FROM tbvendedores WHERE matricula = '00233';
+
+SELECT * FROM tbvendedores;
